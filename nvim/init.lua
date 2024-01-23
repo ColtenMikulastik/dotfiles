@@ -96,6 +96,14 @@ require("lazy").setup({
 		end
 	},
 
+	-- vim greeter / spash screen
+	{
+		'goolord/alpha-nvim',
+		config = function ()
+			require'alpha'.setup(require'alpha.themes.dashboard'.config)
+		end
+	};
+
 	-- Status line configuration
 	{
 		"nvim-lualine/lualine.nvim",
@@ -403,7 +411,7 @@ mason_lspconfig.setup_handlers {
 			capabilities = capabilities,
 			on_attach = on_attach,
 			settings = servers[server_name],
-			filetypes = (servers[server_name] or {}).filetypes,
+			filetypes = (servers[server_name] or {}).filetypes;
 		}
 	end
 }
