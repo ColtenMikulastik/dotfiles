@@ -13,6 +13,8 @@ fi
 neofetch
 # aliases to have :^)
 alias l="ls -F"
+alias nv="nvim"
+alias vcvrack="Rack"
 
 # my prompt
 PROMPT='%F{red}[%f%F{grey}%n@%m%f %F{green}%~%f%F{red}]%f%F{grey}%#:%f '
