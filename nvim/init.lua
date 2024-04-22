@@ -30,7 +30,9 @@ require("lazy").setup({
 	"tpope/vim-rhubarb",
 	-- vim "heuristic"
 	"tpope/vim-sleuth",
-	
+	-- cht.sh pluggin
+	"RishabhRD/popfix",
+	"RishabhRD/nvim-cheat.sh",
 	-- LSP configurations "search for lspconfig to find it below"
 	{
 		-- LSP
@@ -196,6 +198,9 @@ vim.wo.signcolumn = "yes"
 -- Decrease update time
 vim.o.updatetime = 250
 vim.o.timeoutlen = 300
+
+-- cheat sh
+vim.g.cheat_default_window_layout = 'split'
 
 -- completion smooting
 vim.o.completeopt = "menuone,noselect"
